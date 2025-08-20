@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation - The Nepalese Nöök</title>
+  <!-- Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fceabb 0%, #f8b500 100%);
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .close-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-decoration: none;
+    }
+    .btn-gradient {
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: #fff !important;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      padding: 10px 20px;
+    }
+    .btn-gradient:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    .container {
+      margin-top: 80px;
+      text-align: center;
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      max-width: 800px;
+      width: 90%;
+    }
+    .container img {
+      max-width: 200px;
+      margin: 20px 0;
+    }
+    .map-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .map-container iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 450px;
+      border: 0;
+      border-radius: 15px;
+    }
+    .call-us {
+      margin-top: 30px;
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      transition: transform 0.3s ease;
+    }
+    .call-us:hover {
+      transform: scale(1.05);
+      text-decoration: none;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back Home Button -->
+  <a href="index.html" class="btn btn-gradient close-button d-flex align-items-center">
+    <i class="fas fa-home"></i> Home
+  </a>
+
+  <div class="container">
+    <h2>🎉 Thank you for your order!</h2>
+    <p>Your order has been successfully placed. We’re preparing it with love & care.</p>
+    <img src="./asset/Thank_you.png" alt="Thank you">
+
+    <h3>📍 Pickup Location</h3>
+    <p><strong>71 Princes Highway, Meningie, 5264</strong></p>
+    
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.957087243945!2d139.33704007629996!3d-35.68566047258938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0e36c504c5bff%3A0x5036b6f24b63670!2s71%20Princes%20Hwy%2C%20Meningie%20SA%205264%2C%20Australia!5e0!3m2!1sen!2sau!4v1692323439847!5m2!1sen!2sau"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0">
+      </iframe>
+    </div>
+
+    <!-- Call Us Section -->
+    <a href="tel:+61473436813" class="call-us">
+      <i class="fas fa-phone-alt"></i> Call us on <strong>+61 473 436 813</strong> after arriving
+    </a>
+  </div>
+
+</body>
+</html>
